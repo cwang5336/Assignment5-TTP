@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="Assignment5.css">
+    </head>
+    <body>
+
+        <table id="table">
+        </table>
+
+
+
+
+        <div>
+                <button id="addRowButton" onClick="addRow()">Add Row</button>
+                <button id="removeRowButton" onClick="removeRow()">Remove Row</button>
+                <button id="addColumnButton" onClick="addColumn()">Add Column</button>
+                <button id="removeColumnButton" onClick="removeColumn()">Remove Column</button>
+        </div>
+
+        <div>
+            <button id="resetButton" onClick="reset()">Reset Page</button>
+        </div>
+
+        <div>
+            <h6 class=py-2>Select from the following list and click on a box to change the color!</h6>
+            <select name="colors" id="color-select" onchange="selectColor(this.value)">
+                <option value="">--Select A Color</option>
+                <option class="red" id="red" value="red">Red</option>
+                <option class="blue" id="blue" value="blue">Blue</option>
+                <option class="green" id="green" value="green">Green</option>
+                <option class="yellow" id="yellow" value="yellow">Yellow</option>
+            </select>
+        </div>
+
+        <div>
+            <h6 class=py-2>Select a color and it will change all the <b>white</b> boxes to the color</h6>
+
+            <select name="colors" id="color-select" onchange="selectColor(this.value)">
+                <option value="">--Select A Color</option>
+                <option class="red" id="red" value="red">Red</option>
+                <option class="blue" id="blue" value="blue">Blue</option>
+                <option class="green" id="green" value="green">Green</option>
+                <option class="yellow" id="yellow" value="yellow">Yellow</option>
+            </select>
+
+            <div id="colorAllUncoloredCellsButton" onClick="colorAllUncoloredCells()">
+                <button>Color All Uncolored Cells</button>
+            </div>
+
+
+        </div>
+
+        <div>
+            <h6 class=py-2>Select a color and it will change ALL the boxes to the color</h6>
+
+            <select name="colors" id="color-select" onchange="selectColor(this.value)">
+                <option value="">--Select A Color</option>
+                <option class="red" id="red" value="red">Red</option>
+                <option class="blue" id="blue" value="blue">Blue</option>
+                <option class="green" id="green" value="green">Green</option>
+                <option class="yellow" id="yellow" value="yellow">Yellow</option>
+            </select>
+
+            <div id="colorAllCellsButton" onClick="colorAllCells()">
+                <button>Color All Cells</button>
+            </div>
+
+        </div>
+
+
+
+        <div>
+            <h6 class=py-2>Clears all of the color in all the boxes</h6>
+            <div id="resetColorOfCellsButton" onClick="resetColorOfCells()">
+                <button>Reset Color Of Cells</button>
+            </div>
+        </div>
+
+
+        <div>
+            <h6 class=py-2>Select a color and then drag the color over the boxes to change them!</h6>
+            <select name="colors" id="color-select" onchange="selectColor(this.value)">
+                <option value="">--Select A Color</option>
+                <option class="red" id="red" value="red">Red</option>
+                <option class="blue" id="blue" value="blue">Blue</option>
+                <option class="green" id="green" value="green">Green</option>
+                <option class="yellow" id="yellow" value="yellow">Yellow</option>
+            </select>
+        </div>
+
+
+
+        
+        <script src="Assignment5.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="Assignment5.css">
+
+    </head>
+    <body>
+
+
+        <table id="table">
+        </table>
+
+
+
+        <select name="colors" id="color-select" onchange="selectColor(this.value)">
+            <option value="">--Select A Color</option>
+            <option class="red" id="red" value="red">Red</option>
+            <option class="blue" id="blue" value="blue">Blue</option>
+            <option class="green" id="green" value="green">Green</option>
+            <option class="yellow" id="yellow" value="yellow">Yellow</option>
+        </select>
+
+        <div>
+                <button  id="addRowButton" onClick="addRow()">Add Row</button>
+
+                <button  id="removeRowButton" onClick="removeRow()">Remove Row</button>
+ 
+                <button  id="addColumnButton" onClick="addColumn()">Add Column</button>
+
+                <button  id="removeColumnButton" onClick="removeColumn()">Remove Column</button>
+        </div>
+
+
+        <div id="colorAllUncoloredCellsButton" onClick="colorAllUncoloredCells()">
+            <button>Color All Uncolored Cells</button>
+        </div>
+        <div id="colorAllCellsButton" onClick="colorAllCells()">
+            <button>Color All Cells</button>
+        </div>
+        <div id="resetColorOfCellsButton" onClick="resetColorOfCells()">
+            <button>Reset Color Of Cells</button>
+        </div>
+
+
+        
+        <script src="Assignment5.js"></script>
+    </body>
+</html> -->
